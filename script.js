@@ -1,21 +1,5 @@
 var nb_codeVersion = 20200429;
 var nb_dataVersion = 20190412;
-var NB = 	{
-		storage: null,
-
-		peek: function(name)
-		{
-			return this.storage.getConfig()[name];
-		},
-
-		poke: function(name, val)
-		{
-			var conf = this.storage.getConfig();
-			conf[name] = val;
-			return this.storage.saveConfig();
-		}
-	};
-NB.storage = new Storage_Local();
 var drag = new Drag();
 var $overlay = $('.overlay');
 $(window).resize(adjustLayout);
@@ -641,6 +625,11 @@ function setRevealState(ev){
 $(window).live('blur', function(){
     $('body').removeClass('reveal');
 });
+$(document).ready {
+	var $html = $('html');
+    	$html.toggleClass('theme-dark');
+    	return false;
+});
 $(document).live('keydown', function(ev){
     setRevealState(ev);
 });
@@ -751,7 +740,6 @@ $('.config .load-board').live('click', function(){
 $('.config .switch-theme').on('click', function() {
     var $html = $('html');
     $html.toggleClass('theme-dark');
-    NB.storage.setTheme($html.hasClass('theme-dark') ? 'dark' : '');
     return false;
 });
 $('.board .del-board').live('click', function(){
