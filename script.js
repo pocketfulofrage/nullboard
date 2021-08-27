@@ -1,5 +1,21 @@
 var nb_codeVersion = 20200429;
 var nb_dataVersion = 20190412;
+var NB = 	{
+		storage: null,
+
+		peek: function(name)
+		{
+			return this.storage.getConfig()[name];
+		},
+
+		poke: function(name, val)
+		{
+			var conf = this.storage.getConfig();
+			conf[name] = val;
+			return this.storage.saveConfig();
+		}
+	};
+NB.storage = new Storage_Local();
 var drag = new Drag();
 var $overlay = $('.overlay');
 $(window).resize(adjustLayout);
