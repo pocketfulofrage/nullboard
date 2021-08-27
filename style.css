@@ -270,7 +270,7 @@
 
 	.board .head.editing .edit {
 		display: block;
-		outline: 1px solid #8eaedd;
+		outline: 1px solid #bc9908;
 	}
 
 	.board .menu {
@@ -313,7 +313,7 @@
 	}
 
 	.board > .head {
-		background: #17171a;
+		box-shadow: 0 0 2px #fff1 inset;
 		padding: 5px;
 		margin: 0 0 10px;
 		border-radius: 2px;
@@ -427,10 +427,7 @@
 	.board .note.dragging,
 	.board .note.dragging.raw {
 		background: #09090A;
-		box-shadow: 0 +1px 0 #0001 inset,
-		            0 -1px 0 #0001 inset,
-		            +1px 0 0 #0001 inset,
-		            -1px 0 0 #0001 inset;
+		outline: 1px solid #fff2;
 	}
 
 	.board .note.dragging * {
@@ -543,13 +540,13 @@
 
 	.board .note .ops .bulk {
 		display: none;
-		background: #fff;
+		background: #202022;
 		border-left: none;
 		padding: 1px 0 2px 5px;
 		font-size: calc( var(--fs-nops) * 1px );
 		font-weight: 500;
-		border-left: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
+		border-left: 1px solid #111;
+		border-bottom: 1px solid #111;
 	}
 
 	.board .note .ops .bulk a {
@@ -568,7 +565,6 @@
 	.board .note.raw {
 		background: transparent;
 		box-shadow: none;
-		font-weight: 500;
 	}
 
 	.board .note.raw.editing {
@@ -612,18 +608,13 @@
 		z-index: 2;
 		position: absolute;
 		opacity: 0;
-		background: #fff;
+		background: linear-gradient(#242426, #202022);
 		white-space: pre-wrap;
 		cursor: move;
-
 		padding: 5px 25px 6px 10px;
-
-		box-shadow: 0 +1px 0 #ACB4BC inset,
-		            0 -1px 0 #ACB4BC inset,
-		            +1px 0 0 #ACB4BC inset,
-		            -1px 0 0 #ACB4BC inset,
-		            0px 1px 3px #00000030;
-	}
+		box-shadow: 0px 1px 4px #000;
+		outline: 1px solid #fc28;
+}
 
 	.note-dragster a {
 		color: #d6d6d6;
