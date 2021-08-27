@@ -348,8 +348,8 @@
 		vertical-align: top;
 		width: calc( var(--lw) * 1px );
 		margin: 0 5px 10px;
-		background: linear-gradient(#EAEDF0 30px, #DDE1E5 90px);
-		border-radius: 2px;
+		background: #17171a;
+		box-shadow: 0 0 2px #fff1 inset;
 	}
 
 	.board .list::-webkit-scrollbar {
