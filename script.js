@@ -732,6 +732,12 @@ $('.config .load-board').live('click', function(){
         openBoard( $(this)[0].board_id );
     return false;
 });
+$('.config .switch-theme').on('click', function() {
+    var $html = $('html');
+    $html.toggleClass('theme-dark');
+    NB.storage.setTheme($html.hasClass('theme-dark') ? 'dark' : '');
+    return false;
+});
 $('.board .del-board').live('click', function(){
     deleteBoard();
     return false;
