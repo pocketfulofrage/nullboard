@@ -132,8 +132,8 @@
 	}
 
 	body {
-		background: #fff;
-		background: #f8f9fb;
+		background: #09090A;
+		background: #d6d6d6;
 	}
 
 	/***/
@@ -260,7 +260,7 @@
 		font-size: calc(10rem / 11);
 		line-height: calc(22 / 10);
 		text-transform: uppercase;
-		color: #1489db;
+		color: #bf9d21;
 		opacity: 0.8;
 	}
 
@@ -279,13 +279,13 @@
 		right: 0;
 		height: 20px;
 		padding: 5px 6px 7px 30px;
-		background: linear-gradient(to right, #EAEDF000, #EAEDF0 10px);
+		background: linear-gradient(to right, #17171a00, #17171a 10px);
 		line-height: calc(20 / 11);
 	}
 
 	.board .menu a,
 	.board .ops  a {
-		color: #000000A0;
+		color: #aaa;
 		transition: color 200ms;
 	}
 
@@ -295,12 +295,12 @@
 
 	.board .menu a:hover,
 	.board .ops  a:hover {
-		color: #000;
+		color: #fc4;
 	}
 
 	.board .menu a.warn:hover,
 	.board .ops  a.warn:hover {
-		color: #c40;
+		color: #fc5555;
 	}
 
 	.board .menu .undo-board,
@@ -313,7 +313,7 @@
 	}
 
 	.board > .head {
-		background: #EAEDF0;
+		background: #17171a;
 		padding: 5px;
 		margin: 0 0 10px;
 		border-radius: 2px;
@@ -417,15 +417,16 @@
 
 	/***/
 	.board .note {
-		background: #fff;
+		background: linear-gradient(#242426, #202022);
+		box-shadow: 0 1px 3px #000a;
+		text-shadow: 0 0 4px #0008;
 		margin-top: 5px;
-		box-shadow: 0 1px 2px #bbb, 0 0 1px #ddd;
 		position: relative;
 	}
 
 	.board .note.dragging,
 	.board .note.dragging.raw {
-		background: #CED4DA;
+		background: #09090A;
 		box-shadow: 0 +1px 0 #0001 inset,
 		            0 -1px 0 #0001 inset,
 		            +1px 0 0 #0001 inset,
@@ -468,7 +469,7 @@
 
 	@keyframes whoomp {
 		0%   { color: inherit; }
-		30%  { color: #888;    }
+		30%  { color: #fff;    }
 		100% { color: inherit; }
 	}
 
@@ -480,7 +481,7 @@
 
 	.reveal .board .head .text a,
 	.reveal .board .note .text a {
-		color: #1489db;
+		color: #fc0;
 		cursor: pointer;
 	}
 
@@ -496,8 +497,9 @@
 	}
 
 	.board .note.editing {
+		background: #111315;
 		box-shadow: none;
-		outline: 1px solid #8eaedd;
+		outline: 1px solid #bc9908;
 	}
 
 	.board .note.editing .text {
@@ -624,7 +626,7 @@
 	}
 
 	.note-dragster a {
-		color: #000;
+		color: #d6d6d6;
 	}
 
 	/***/
@@ -718,12 +720,12 @@
 
 	.config a {
 		display: block;
-		color: #000;
+		color: #ddd;
 		transition: color 200ms;
 	}
 
 	.config a:hover {
-		color: #1489db;
+		color: #fc2;
 	}
 
 	.config .teaser {
@@ -765,7 +767,7 @@
 	}
 
 	.config .bulk .boards a.load-board.active {
-		color: #1489db;
+		color: #fc2;
 	}
 
 	.config .bulk .boards a.load-board.active:before {
@@ -776,7 +778,7 @@
 	}
 
 	.config .bulk .boards a.load-board.active:hover {
-		color: #000;
+		color: #ddd;
 	}
 
 	.config .bulk .boards a.load-board.dragging {
@@ -797,12 +799,12 @@
 		opacity: 0;
 		line-height: calc(19 / 11);
 		padding-left: 5px;
-		background: #fff;
-		color: #000;
+		background: #09090A;
+		color: #ddd;
 		border-radius: 2px;
 		cursor: move;
-		outline: 1px solid #ACB4BC;
-		box-shadow: 0px 1px 3px #00000030;
+		outline: 1px solid #fc2a;
+		box-shadow: 0px 1px 3px #000;
 	}
 
 	.config .bulk a i,
@@ -956,7 +958,7 @@
 	.fs-set .config .bulk .ui-prefs .f-prefs tr.ui-fs td.val,
 	.lh-set .config .bulk .ui-prefs .f-prefs tr.ui-lh td.val,
 	.lw-set .config .bulk .ui-prefs .f-prefs tr.ui-lw td.val {
-		color: #1489db;
+		color: #fc2;
 		cursor: pointer;
 	}
 
