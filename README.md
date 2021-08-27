@@ -10,12 +10,13 @@ The name also happens to abbreviate to [NB](https://en.wikipedia.org/wiki/Nota_b
 
 ## Dead simple
 
-* Single-page web app - just one HTML file, an ancient jQuery package and a webfont pack.
-* Can be used completely offline. In fact, it's written exactly with this use in mind.
+* <s>Single-page web app - just one HTML file, an ancient jQuery package and a webfont pack.</s>
+* <s>Can be used completely offline. In fact, it's written exactly with this use in mind.</s>
 
-## Locally stored
+## Remotely stored
 
-* All data is stored locally, for now using [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage).
+* <s>All data is stored locally, for now using [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage.</s>
+* I -love- this app, but I needed data stored remotely.  This fork is an attempt to make that happen.
 * The data can be exported to- or imported from a plain text file in a simple JSON format.
 * The data can also be automatically backed up to a local disk (with the help of [Nullboard Agent](https://nullboard.io/backups)).
 
