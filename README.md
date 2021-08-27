@@ -1,3 +1,5 @@
+This is a fork of https://github.com/apankrat/nullboard, with changed borrowed heavily from https://github.com/jcurtis4207/nullboard
+
 # Nullboard
 
 Nullboard is a minimalist take on a kanban board / a task list manager, designed to be compact, readable and quick in use.
