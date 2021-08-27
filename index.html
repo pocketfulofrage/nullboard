@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <!--
+
+	+-------------------------------------------------------------+
+	|                                                             |
+	|             Nullboard, a minimalist kanban board            |
+	|                    https://nullboard.io                     |
+	|                                                             |
+	+-------------------------------------------------------------+
+
+	**** Modified by Jacob Curtis ****
+
+	LICENSE
+
+	The 2-clause BSD license with the Commons Clause condition.
+
+	IN SHORT
+
+	You can use, change and distribute the software free of charge
+	provided that you do not sell it or make money off it in
+	certain less direct ways as specified below. When distributed,
+	the software must include a complete copy of this license.
+
+	IN FULL
+
+	The Software is provided to you by the Licensor under the
+	License, as defined below, subject to the following condition.
+
+	Without limiting other conditions in the License, the grant of
+	rights under the License will not include, and the License does
+	not grant to you, the right to Sell the Software.
+
+	For purposes of the foregoing, "Sell" means practicing any or
+	all of the rights granted to you under the License to provide
+	to third parties, for a fee or other consideration (including
+	without limitation fees for hosting or consulting/ support
+	services related to the Software), a product or service whose
+	value derives, entirely or substantially, from the functionality
+	of the Software. Any license notice or attribution required
+	by the License must also include this Commons Clause License
+	Condition notice.
+
+	Software:  Nullboard
+	License:   The 2-clause BSD License
+	Licensor:  Alexander Pankratov / swapped.ch
+
+  -->
+  <title>Nullboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="extras/favicon.ico"/>
+</head>
+<body>
+	<div class=logo>
+		<a href=https://nullboard.io>Nullboard</a>
+		<div class=bulk>
+			<a href=# class=view-about>About</a>
+			<a href=# class=view-license>License</a>
+			<a href="https://github.com/jcurtis4207?tab=repositories" target=_blank>Github</a>
+		</div>
+	</div>
+	<div class=config>
+		<a href=# class=teaser>&equiv;</a>
+		<div class=bulk>
+			<a href=# class=add-board>Add new board...</a>
+			<div class=boards>
+				<!-- here'll be boards -->
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class=wrap></div>
+	<div class=overlay></div>
+	<tt>
+		<!-- templates -->
+		<div class=board>
+			<div class=head>
+				<div class=text></div>
+				<input class=edit spellcheck=false placeholder='Name of the board'>
+				<div class=menu>
+					<a href=# class=teaser>&equiv;</a>
+					<div class=bulk>
+						<a href=# class='del-board warn'><u></u> Board</a>
+						<a href=# class='add-list'>+ List</a>
+					</div>
+				</div>
+			</div>
+			<div class=lists-scroller><div></div></div>
+			<div class=lists></div>
+		</div>
+		<div class=list>
+			<div class=head>
+				<div class=text></div>
+				<input class=edit spellcheck=false placeholder='Name of the list'>
+				<div class=menu>
+					<a href=# class=teaser>&equiv;</a>
+					<div class=bulk>
+						<a href=# class='del-list warn'><u></u> List</a>
+						<a href=# class='mov-list-l full'>&lt; Move</a>
+						<a href=# class='mov-list-l half'>&lt; Mo</a><a href=# class='mov-list-r half'>ve &gt;</a>
+						<a href=# class='mov-list-r full'>Move &gt;</a>
+						<a href=# class='add-note'>+ Note</a>
+					</div>
+				</div>
+			</div>
+			<div class=notes></div>
+		</div>
+		<div class=note>
+			<div class=ops>
+				<a href=# class=teaser></a>
+				<div class=bulk>
+					<a href=# class='del-note warn'><u></u></a>
+					<a href=# class='raw-note'>R</a>
+					<a href=# class='collapse'>_</a>
+				</div>
+			</div>
+			<div class=text>
+			</div>
+			<textarea class=edit spellcheck=false></textarea>
+		</div>
+		<a href=# class=load-board></a>
+		<textarea class=encoder></textarea>
+		<div class=about>
+			<h1>Nullboard</h1>
+			Minimalist locally-stored kanban board
+			<a href=https://nullboard.io target=_blank>https://nullboard.io</a>
+			<br>
+			<p>Modified by Jacob Curtis</p>
+			<div></div>
+		</div>
+		<div class=license></div>
+	</tt>
+</body>
+<script src="extras/jquery-1.8.3.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.8.3.min.js">\x3C/script>')</script>
+<script src="script.js" type="text/javascript"></script>
+</html>
