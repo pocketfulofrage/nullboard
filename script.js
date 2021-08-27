@@ -625,7 +625,7 @@ function setRevealState(ev){
 $(window).live('blur', function(){
     $('body').removeClass('reveal');
 });
-$(document).ready(){
+$(document).ready(function(){
 	var $html = $('html');
     	$html.toggleClass('theme-dark');
     	return false;
