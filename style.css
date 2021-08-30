@@ -75,12 +75,12 @@
 
 	/***/
 	html {
-		--ff: f-barlow, sans-serif;
+		--ff: f-open-sans, sans-serif;
 
-		--fs: 14;                        /* font-size   */
+		--fs: 12;                        /* font-size   */
 		--lh: calc( var(--fs) * 1.25 );  /* line-height */
-		--fs-head: 16;                 /* font-size of board heading */
-		--fs-nops: 12;                    /* font-size of the note ops */
+		--fs-head: 13;                 /* font-size of board heading */
+		--fs-nops: 11;                    /* font-size of the note ops */
 		--lw: calc(20 * var(--fs) + 30); /* .list width */
 	}
 
