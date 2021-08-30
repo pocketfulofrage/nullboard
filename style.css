@@ -77,10 +77,10 @@
 	html {
 		--ff: f-barlow, sans-serif;
 
-		--fs: 11;                        /* font-size   */
+		--fs: 14;                        /* font-size   */
 		--lh: calc( var(--fs) * 1.25 );  /* line-height */
-		--fs-head: 13.6;                 /* font-size of board heading */
-		--fs-nops: 9;                    /* font-size of the note ops */
+		--fs-head: 16;                 /* font-size of board heading */
+		--fs-nops: 12;                    /* font-size of the note ops */
 		--lw: calc(20 * var(--fs) + 30); /* .list width */
 	}
 
