@@ -1,4 +1,4 @@
-This is a fork of https://github.com/apankrat/nullboard, with changed borrowed heavily from https://github.com/jcurtis4207/nullboard
+This is a fork of https://github.com/apankrat/nullboard, with changes borrowed heavily from https://github.com/jcurtis4207/nullboard
 
 # Nullboard
 
